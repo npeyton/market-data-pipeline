@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    database: NEWS_PIPELINE
+    schema: RAW
+    tables:
+      - name: raw_day_aggs
+        meta:
+          dagster:
+            asset_key: ["raw_day_aggs_table"]
+
+      - name: raw_ticker_details
+        meta:
+          dagster:
+            asset_key: ["raw_ticker_details_table"]
+
+      - name: raw_dash_exports
+        meta:
+          dagster:
+            asset_key: ["raw_dash_exports_table"]

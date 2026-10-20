@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.p8
+
+# Python
+.venv
+__pycache__/
+
+# Editor history
+.history
+
+# Dagster local state
+dagster_home
+
+# dbt build output
+market_dbt/target/
+market_dbt/logs/
+market_dbt/dbt_packages/
+logs/

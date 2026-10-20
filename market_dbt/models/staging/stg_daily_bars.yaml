@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_daily_bars
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: trade_date
+        data_tests:
+          - not_null
